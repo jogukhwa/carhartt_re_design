@@ -34,6 +34,7 @@ html, body {
   width: 100%;
   height: 100%;
   background-color: #191919;
+  overflow: hidden;
 }
 
 .header {
@@ -90,22 +91,22 @@ html, body {
   border-right: 3px solid #a64b2a;
 }
 .header-wrap .main-header > div:nth-child(1) {
-  background: url(/images/banner_1.jpg) no-repeat;
+  background: url(../images/banner_1.jpg) no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
 .header-wrap .main-header > div:nth-child(2) {
-  background: url(/images/banner_2.jpg) no-repeat center;
+  background: url(../images/banner_2.jpg) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
 }
 .header-wrap .main-header > div:nth-child(3) {
-  background: url(/images/banner_3.jpg) no-repeat center;
+  background: url(../images/banner_3.jpg) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
 }
 .header-wrap .main-header > div:nth-child(4) {
-  background: url(/images/banner_4.jpg) no-repeat bottom left;
+  background: url(../images/banner_4.jpg) no-repeat bottom left;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -246,11 +247,11 @@ html, body {
   height: 1100px;
   transition: 0.8s;
   overflow: hidden;
-  background: url("/images/new_vista.jpg") center center no-repeat;
+  background: url("../images/new_vista.jpg") center center no-repeat;
   background-size: 100% 100%;
 }
 .vista-wrap .vista-content .vista-image:hover {
-  background: url("/images/new_vista.jpg") left center no-repeat;
+  background: url("../images/new_vista.jpg") left center no-repeat;
   background-size: 200% 200%;
   filter: brightness(80%);
 }
@@ -599,8 +600,7 @@ html, body {
   overflow: hidden;
 }
 .promotion-section .promotion-slide-box .promotion-slide {
-  -webkit-animation: marquee 5s linear infinite;
-          animation: marquee 5s linear infinite;
+  animation: marquee 5s linear infinite;
   padding-right: 10px;
   display: flex;
   white-space: nowrap;
@@ -638,15 +638,6 @@ html, body {
   text-align: center;
   font-size: 24px;
   font-family: "LeferiBaseType-RegularA";
-}
-
-@-webkit-keyframes marquee {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-58%);
-  }
 }
 
 @keyframes marquee {
@@ -742,14 +733,6 @@ html, body {
   text-transform: uppercase;
 }
 .footer .top-section .footer-wrap .news-letter .address input::-moz-placeholder {
-  text-align: center;
-  color: #a64b2a;
-  font-size: 24px;
-  font-family: "LeferiBaseType-RegularA";
-  text-transform: uppercase;
-  opacity: 0.5;
-}
-.footer .top-section .footer-wrap .news-letter .address input:-ms-input-placeholder {
   text-align: center;
   color: #a64b2a;
   font-size: 24px;
